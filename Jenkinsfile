@@ -48,7 +48,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    image 'bash'
+                    image 'bash:5.1.16-alpine3.22'
                     reuseNode true
                 }
             }
