@@ -50,6 +50,8 @@ pipeline {
                     image 'node:18-alpine'
                     reuseNode true
                 }
+            }
+            agent {
                 docker {
                     image 'bash:5.1.16-alpine3.22'
                     reuseNode true
